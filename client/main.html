@@ -1,0 +1,17 @@
+<head>
+  <title>Todos List</title>
+</head>
+
+<body>
+  {{> navbar }}
+  {{#if currentUser}}
+    {{> progress }}
+    {{> todo}}
+  {{ else }}
+    {{#if showLogin}}
+      {{> login}}
+    {{else}}
+      {{> register}}
+    {{/if}}
+  {{/if}}
+</body>

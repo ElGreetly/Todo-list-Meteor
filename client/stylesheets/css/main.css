@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mali Regular'), local('Mali-Regular'), url(https://fonts.gstatic.com/s/mali/v1/N0ba2SRONuN4SC3ECg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v9/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+body {
+  background-color: #bfebff;
+  margin: 0px;
+  padding: 0px;
+}
+body header nav {
+  background-color: #ff3679;
+}
+body header nav a {
+  color: white !important;
+  font-style: italic;
+  font-weight: 700;
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px !important;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+body header nav span button {
+  color: #36bfff !important;
+  font-weight: 600 !important;
+  font-family: 'Indie Flower', cursive;
+  font-size: 19px;
+}
+body div div .progress {
+  background-color: #fff;
+}
+body div div .progress .progress-bar {
+  color: #DDD;
+}
+body div h3 {
+  font-family: 'Mali', cursive;
+}
+body div form input[type="text"] {
+  font-family: 'Mali', cursive;
+}
+body div .list-group li {
+  cursor: pointer;
+  position: relative;
+  color: #444;
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Mali', cursive;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+body div .list-group li .fa-check {
+  position: absolute;
+  right: 47px;
+  top: 16px;
+  color: #999;
+  transform: scale(1.7);
+}
+body div .list-group li .fa-trash {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transform: scale(1.7);
+  color: #999;
+}
+body div .list-group li .fa-trash:hover {
+  color: red;
+}
+body h2 {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  font-size: 4.5vw;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+body h3.gouls {
+  font-size: 2.75vw;
+  color: #ff3679;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+body form input {
+  font-family: 'Mali', cursive;
+}
+body form input[type="submit"] {
+  color: #36bfff;
+  font-weight: 600;
+}
+body form input[type="submit"]:hover {
+  color: #36bfff;
+  font-weight: 600;
+}
+.done {
+  text-decoration: line-through !important;
+}
+.checked {
+  color: lightseagreen !important;
+}

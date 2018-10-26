@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@bgColor: #bfebff;
+@primaryColor: #36bfff;
+@secondryColor: #ff3679;
+
+body{
+    background-color: @bgColor;
+    margin: 0px;
+    padding: 0px;
+    header{
+        nav{
+            background-color: @secondryColor;
+            a{
+                color: white !important;
+                font-style: italic;
+                font-weight: 700;
+                font-family: 'Indie Flower', cursive;
+                font-size: 35px !important; 
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -o-user-select: none;
+            }
+            span{
+                button{
+                    color: @primaryColor !important;
+                    font-weight: 600 !important;
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+    div{
+        div{
+            .progress{
+                background-color: #fff;
+                .progress-bar{
+                    color: #DDD;
+                }
+            }
+        }
+    }
+    div{
+        h3{
+            font-family: 'Mali', cursive;
+        }
+        form{
+            input[type="text"]{
+                font-family: 'Mali', cursive;
+            }
+        }
+        .list-group{
+            li{
+                cursor: pointer;
+                position: relative;
+                color: #444;
+                font-style: italic;
+                font-weight: 400;
+                font-family: 'Mali', cursive;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -o-user-select: none;
+                .fa-check{
+                    position: absolute;
+                    right: 47px;
+                    top: 16px;
+                    color: #999;
+                    transform: scale(1.7);
+                }
+                .fa-trash{
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    transform: scale(1.7);
+                    color: #999;
+                }
+                .fa-trash:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    h2{
+        font-family: 'Indie Flower', cursive;
+        font-weight: 700;
+        font-size: 4.5vw;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -o-user-select: none;
+    }
+    h3.gouls{
+        font-size: 2.75vw;
+        color: @secondryColor;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -o-user-select: none;
+    }
+    form{
+        input{
+            font-family: 'Mali', cursive;
+        }
+        input[type="submit"]{
+            color: @primaryColor;
+            font-weight: 600;
+        }
+        input[type="submit"]:hover{
+            color: @primaryColor;
+            font-weight: 600;
+        }
+    }
+}
+.done{
+    text-decoration: line-through !important;
+}
+.checked{
+    color: lightseagreen !important;
+}

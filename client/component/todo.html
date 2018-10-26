@@ -1,0 +1,18 @@
+<template name="todo">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-3">
+            <h3 class="text-center">Your Todo List</h3>
+            <form method="POST">
+                <input type="text" name="new-todo" id="new-todo" class="form-control" placeholder="Add New Todo">
+            </form>
+            <ul class="list-group mt-2">
+                {{#each doneTodos }}
+                <li class="list-group-item {{#if done }}done{{/if}}" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
+                {{/each }}
+                {{#each todos }}
+                <li class="list-group-item {{#if done }}done{{/if}}" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
+                {{/each }}
+            </ul>
+        </div>
+    </div>
+</template>
