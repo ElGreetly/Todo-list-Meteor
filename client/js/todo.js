@@ -36,30 +36,26 @@ Template.todo.events({
         e.preventDefault();
         e.target.style = 'border-top: 1px solid #EEE';
         did = this._id; //replaced item id
-        let tsort = Todos.findOne({_id: tid}).sort,
-            dsort = Todos.findOne({_id: did}).sort;
-        Todos.update({_id: did}, {$set :{sort: tsort}});
-        Todos.update({_id: tid}, {$set :{sort: dsort}});
+        Meteor.call('replace.todo', tid, did);
     },
     //handle removing todo item
-    'click .fa-trash': function (){
-        Todos.remove({_id: this._id});
+    'click .fa-trash': function (e){
+        let el = e.target.parentElement,
+            itemId = this._id,
+            animationEnd = 'animationend oAnimationEnd mozAnimationEnd webkitAnimationEnd';
+          $(el).addClass('animated fadeOutRight').one(animationEnd,
+           function(){
+               Meteor.call('remove.todo', itemId);
+            });
     },
     //handle toggle between completion
-    'click .fa-check': function (){
-        let isDone = Todos.findOne({_id: this._id}).done;
-        Todos.update({_id: this._id}, {$set :{done: !isDone}});
+    'click .fa-check': function (e){
+        Meteor.call('check.todo', this._id);
     },
     //adding new todo item
     'submit form': (e) => {
         e.preventDefault();
-        Todos.insert({
-            text: e.target.querySelector('#new-todo').value,
-            user: Meteor.user()._id,
-            done: false,
-            sort: todos = Todos.find({user: Meteor.user()._id}).fetch().length,
-            createdAt: new Date()
-        });
+        Meteor.call('insert.todo', e.target.querySelector('#new-todo').value);
         e.target.querySelector('#new-todo').value = "";
     }
 });

@@ -1,8 +1,5 @@
 import '../component/navbar.html';
 
-Meteor.startup(() => {
-    Session.set('showLogin', false);
-})
 Template.navbar.helpers({
     showLogin: function() {
       return Session.get('showLogin');

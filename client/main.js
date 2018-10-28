@@ -7,6 +7,10 @@ import './js/progress';
 import './js/register';
 import './js/login';
 
+Meteor.startup(() => {
+  Session.set('showLogin', false);
+});
+
 Template.body.helpers({
     showLogin: function() {
       return Session.get('showLogin');

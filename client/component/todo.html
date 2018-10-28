@@ -7,10 +7,10 @@
             </form>
             <ul class="list-group mt-2">
                 {{#each doneTodos }}
-                <li class="list-group-item {{#if done }}done{{/if}}" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
+                <li class="list-group-item {{#if done }}done{{/if}} animated fadeIn" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
                 {{/each }}
                 {{#each todos }}
-                <li class="list-group-item {{#if done }}done{{/if}}" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
+                <li class="list-group-item {{#if done }}done{{/if}} animated fadeIn" data-sort="{{sort}}" draggable="true">{{text}} <i class="fa fa-check {{#if done }}checked{{ /if }}"></i><i class="fa fa-trash"></i></li>
                 {{/each }}
             </ul>
         </div>
