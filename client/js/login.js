@@ -11,7 +11,7 @@ Template.login.events({
                 Bert.alert(err.reason, 'danger', 'growl-top-right');
             }else{
                 //if success
-                Bert.alert('You are logged in!', 'success', 'growl-top-right');
+                Bert.alert('You are logged in!', 'success', 'growl-bottom-right');
             }
         });
         return false;
