@@ -39,7 +39,7 @@ It's a todos application using Meteor framework (Javascript framework working wi
 * lib: contains collections for MongoDB and Meteor.methods for data insert and update and router.js is optional which not contains any routes right now.
 
 ## Production
-Please make sure to remove insecure and meteortoys:allthings packages before production deployment.
+Please make sure to remove `insecure` and `meteortoys:allthings` packages before production deployment.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

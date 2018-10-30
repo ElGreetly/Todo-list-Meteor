@@ -88,6 +88,11 @@ body h2 {
   user-select: none;
   -o-user-select: none;
 }
+@media only screen and (max-width: 770px) {
+  body h2 {
+    font-size: 6.5vw;
+  }
+}
 body h3.gouls {
   font-size: 2.75vw;
   color: #ff3679;
@@ -96,6 +101,11 @@ body h3.gouls {
   -ms-user-select: none;
   user-select: none;
   -o-user-select: none;
+}
+@media only screen and (max-width: 770px) {
+  body h3.gouls {
+    font-size: 4vw;
+  }
 }
 body form input {
   font-family: 'Mali', cursive;

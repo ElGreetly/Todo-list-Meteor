@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    build: ./
+    image: todo/app
+    ports:
+      - "80:3000"
+    links:
+      - mongo
+    environment:
+      - ROOT_URL=http://example.com
+      - MONGO_URL=mongodb://mongo:27017/meteor
+
+  mongo:
+    image: mongo:latest
+    command: mongod --storageEngine=wiredTiger
